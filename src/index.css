@@ -1,3 +1,28 @@
 @import "tailwindcss";
 @import "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
+
+.mouse-gradient {
+  background-image: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    #a855f7,
+    #3b82f6,
+    #1e3a8a
+  );
+
+  background-size: 200% 200%;
+  background-position: center;
+  transition: background-image 0.2s ease;
+}
+
+.donfiscal-gradient {
+  background: linear-gradient(
+    90deg,
+    #063B46,
+    #10B981,
+    #14B8A6
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
