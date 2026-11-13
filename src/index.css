@@ -5,9 +5,9 @@
 .mouse-gradient {
   background-image: radial-gradient(
     circle at var(--mouse-x) var(--mouse-y),
-    #a855f7,
-    #3b82f6,
-    #1e3a8a
+    #063B46,
+    #10B981,
+    #14B8A6
   );
 
   background-size: 200% 200%;
@@ -26,3 +26,7 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
+/* *{
+   font-family: "Radley", serif;
+} */
