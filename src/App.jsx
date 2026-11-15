@@ -16,13 +16,14 @@ import MentorClients from './Pages/Mentor_Page/MentorClients'
 import MentorNotification from './Pages/Mentor_Page/MentorNotification'
 import PaymentHistory from './Pages/Mentor_Page/PaymentHistory'
 import Upload from './Pages/Mentor_Page/Upload'
+import MentorProfile from './Pages/Mentor_Page/MentorProfile'
 
 function App() {
   return (
     <>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/register' element={<Aut/>}/>
+        <Route path='/auth' element={<Aut/>}/>
         <Route path='*' element={<PNF/>}/>
         <Route path='/user/dashboard' element={<UserDashboard/>}/>
         <Route path='/user/accounts' element={<AccountDetails/>}/>
@@ -33,9 +34,10 @@ function App() {
         <Route path='/admin/mentors' element={<AllMentors/>}/>
         <Route path='/admin/users' element={<AllUsers/>}/>
         <Route path='/mentor/dashboard' element={<MentorDashboard/>}/>
+        <Route path='/mentor/profile' element={<MentorProfile/>}/>
         <Route path='/mentor/clients' element={<MentorClients/>}/>
         <Route path='/mentor/notification' element={<MentorNotification/>}/>
-        <Route path='/mentor/paymenthistory' element={<PaymentHistory/>}/>
+        <Route path='/mentor/paymentHistory' element={<PaymentHistory/>}/>
         <Route path='/mentor/uploads' element={<Upload/>}/>
       </Routes>
     </>

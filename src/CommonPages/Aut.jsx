@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Aut() {
   return (
@@ -72,6 +73,11 @@ export default function Aut() {
             Create Account
           </a>{" "}
         </p>
+        <div className="flex justify-center items-center gap-2 py-2">
+          <Link className="bg-lime-800 text-white hover:bg-lime-900 capitalize px-4 py-1 rounded-lg " to={'/user/dashboard'}>User</Link>
+          <Link className="bg-sky-800 text-white hover:bg-sky-900 capitalize px-4 py-1 rounded-lg " to={'/mentor/dashboard'}>mentor</Link>
+          <Link className="bg-fuchsia-800 text-white hover:bg-fuchsia-900 capitalize px-4 py-1 rounded-lg " to={'/admin/dashboard'}>admin</Link>
+        </div>
       </div>
     </div>
   );
